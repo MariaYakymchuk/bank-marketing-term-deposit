@@ -20,10 +20,17 @@ Only **11.3%** of clients said "yes" — the classes are imbalanced.
 ├── Mid_term_Project.ipynb   # main notebook: EDA, preprocessing, models, tuning, SHAP, error analysis
 ├── data/
 │   └── bank-additional-full.csv
+├── src/                     # helper functions used by the notebook
+│   ├── preprocessing.py     # load + clean data, new features, outliers, encoder/scaler
+│   ├── modeling.py          # pipelines, training + ROC AUC, hyperparameter helpers
+│   └── evaluation.py        # best threshold, TP / FP / FN / TN labels for error analysis
 ├── images/                  # plots used in this README
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
+
+The notebook shows every step with explanations; the repeated code lives in `src/`, so the same preprocessing can be reused for new clients.
 
 ## What was done
 1. **EDA** — distributions, subscription rate per category, correlations, 7 hypotheses.
