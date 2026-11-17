@@ -1,7 +1,5 @@
 # Bank Marketing: Will the Client Open a Term Deposit?
 
-Mid-term project of the course "Machine Learning для людей".
-
 ## Task
 A Portuguese bank calls clients and offers them a term deposit. The goal is to build a model that predicts **if a client will say "yes"** (target `y`), and to explain how the model makes its decisions.
 
